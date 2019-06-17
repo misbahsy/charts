@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS user;
+
+
+CREATE TABLE user (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  sitename TEXT UNIQUE NOT NULL,
+  latitude DECIMAL NOT NULL,
+  longitude DECIMAL NOT NULL,
+  sitemanager TEXT NOT NULL,
+  employees INTEGER
+);
